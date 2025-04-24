@@ -12,7 +12,7 @@ from typing import List, Any, cast, Optional
 # ─────────────────────── Name Sets ───────────────────────────
 
 original_name_set = [
-    "Elnuman", "Solomon", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
+    "Elnuman", "Solomon", "Charity", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
     "Curry", "Bronny", "Flight", "Cash", "Draymond", "Klay", "Andrew", "Omar", "DJ Khalid"
 ]
 
