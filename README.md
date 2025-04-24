@@ -26,8 +26,8 @@ A web application that generates interactive logic puzzles involving knights (wh
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/knights-knaves-puzzle.git
-   cd knights-knaves-puzzle
+   git clone https://github.com/yourusername/Knights-Knaves-Puzzle.git
+   cd Knights-Knaves-Puzzle
 
 ---
 
@@ -39,3 +39,12 @@ A web application that generates interactive logic puzzles involving knights (wh
 2. Open your browser and go to:
    ```bash
    http://localhost:5000
+
+---
+
+## 🌐 Running the App Online
+
+To try the live version of the app, simply visit:
+🔗 https://knights-knaves-puzzle.onrender.com
+
+No installation required — just open the link and start solving puzzles!
