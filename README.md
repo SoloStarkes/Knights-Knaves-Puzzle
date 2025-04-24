@@ -33,7 +33,9 @@ A web application that generates interactive logic puzzles involving knights (wh
 
 ## 🚀 Running the App Locally
 
-- 1. Start the Flask server:
-     python app.py
-  3. Open your browser and go to:
-     http://localhost:5000
+1. Start the Flask server:
+   ```bash
+   python app.py
+2. Open your browser and go to:
+   ```bash
+   http://localhost:5000
