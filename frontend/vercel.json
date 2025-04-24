@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/generate_puzzle",
+      "destination": "https://YOUR-RENDER-APP.onrender.com/generate_puzzle"
+    }
+  ]
+}
