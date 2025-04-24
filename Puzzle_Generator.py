@@ -12,7 +12,7 @@ from typing import List, Any, cast, Optional
 # ─────────────────────── Name Sets ───────────────────────────
 
 original_name_set = [
-    "Elnuman", "Solomon", "Charity", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
+    "Elnuman", "Solomon", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
     "Curry", "Bronny", "Flight", "Cash", "Draymond", "Klay", "Andrew", "Omar", "DJ Khalid"
 ]
 
@@ -378,16 +378,21 @@ class CompoundPuzzle(Puzzle):
 
     def ensure_unique_names(self) -> None:
         """
-        Ensures that all islanders have unique names by appending a suffix for duplicates.
+        Ensures each islander has a unique name by replacing a duplicate with
+        an unused name from the original name set.
         """
-        seen = {}
+        used_names = set()
         for islander in self.islanders:
-            name = islander.name
-            if name in seen:
-                seen[name] += 1
-                islander.name = f"{name}_{seen[name]}"
+            if islander.name in used_names:
+                # get a list of alternative names that haven't been used yet
+                alternatives = [n for n in name_set() if n not in used_names]
+                if alternatives:
+                    new_name = random_element(alternatives)
+                    islander.name = new_name
+                    used_names.add(new_name)
+                # If no alternative is found, the duplicate name remains.
             else:
-                seen[name] = 0
+                used_names.add(islander.name)
 
     def join_with_match(self, other: Puzzle):
         """
