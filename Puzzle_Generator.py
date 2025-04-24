@@ -13,7 +13,9 @@ from typing import List, Any, cast, Optional
 
 original_name_set = [
     "Elnuman", "Solomon", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
-    "Curry", "Bronny", "Flight", "Cash", "Draymond", "Klay", "Andrew", "Omar", "DJ Khalid"
+    "Curry", "Bronny", "FlightReacts", "CashNasty", "Draymond", "Klay", "Andrew", 
+    "Omer", "DJ Khalid", "Quari", "Ladarius", "Oscar", "Kaleb", "Sydney", 
+    "Sheldy", "Freddy", "Soda"
 ]
 
 def name_set() -> List[str]:
