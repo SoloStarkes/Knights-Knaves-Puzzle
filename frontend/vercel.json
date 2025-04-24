@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/generate_puzzle",
-      "destination": "https://knights-knaves-puzzle.onrender.com"
-    }
-  ]
-}
