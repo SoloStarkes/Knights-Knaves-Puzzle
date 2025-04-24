@@ -1,13 +1,13 @@
-from flask import Flask, jsonify, request, send_from_directory
-from Puzzle_Generator import PuzzleGenerator
+from flask import Flask, jsonify, request, render_template
+from Puzzle_Generator import PuzzleGenerator, Solver
 import os
 
-app = Flask(__name__, static_url_path='', static_folder='static')
+app = Flask(__name__, static_url_path='/static', static_folder='static', template_folder='templates')
 puzzle_generator = PuzzleGenerator()
 
 @app.route('/')
 def index():
-    return send_from_directory('.', 'index.html')
+    return render_template('index.html')
 
 @app.route('/generate_puzzle')
 def generate_puzzle():
@@ -20,12 +20,9 @@ def generate_puzzle():
     else:
         puzzle = puzzle_generator.hard()
     
-    # Create solver for the puzzle
-    from Puzzle_Generator import Solver
     solver = Solver(puzzle)
     solver.solve()
     
-    # Format the puzzle data for JSON response
     puzzle_data = {
         'islanders': [i.name for i in puzzle.islanders],
         'statements': [s.full_statement() for s in puzzle.statements],
@@ -37,7 +34,4 @@ def generate_puzzle():
     return jsonify(puzzle_data)
 
 if __name__ == '__main__':
-    # Create static folder if it doesn't exist
-    if not os.path.exists('static'):
-        os.makedirs('static')
-    app.run(host='0.0.0.0', port=5000) 
+    app.run(host='0.0.0.0', port=5000)
