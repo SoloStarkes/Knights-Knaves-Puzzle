@@ -45,6 +45,7 @@ A web application that generates interactive logic puzzles involving knights (wh
 ## 🌐 Running the App Online
 
 To try the live version of the app, simply visit:
+
 🔗 https://knights-knaves-puzzle.onrender.com
 
 No installation required — just open the link and start solving puzzles!
