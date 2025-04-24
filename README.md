@@ -1,4 +1,4 @@
-# Knights-Knaves-Puzzle
+# 🧩 Knights-Knaves-Puzzle
 
 **Author:** Solomon Starkes and Elnuman Logman
 **Date:** April 24, 2025
@@ -28,3 +28,12 @@ A web application that generates interactive logic puzzles involving knights (wh
    ```bash
    git clone https://github.com/yourusername/knights-knaves-puzzle.git
    cd knights-knaves-puzzle
+
+---
+
+## 🚀 Running the App Locally
+
+- 1. Start the Flask server:
+     python app.py
+  3. Open your browser and go to:
+     http://localhost:5000
