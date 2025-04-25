@@ -15,7 +15,7 @@ original_name_set = [
     "Elnuman", "Solomon", "Bram", "Sidy", "Drake", "Munzir", "Ajay", "Lebron", 
     "Curry", "Bronny", "FlightReacts", "CashNasty", "Draymond", "Klay", "Andrew", 
     "Omer", "DJ Khalid", "Quari", "Ladarius", "Oscar", "Kaleb", "Sydney", 
-    "Sheldy", "Freddy", "Soda"
+    "Sheldy", "Freddy", "Soda", "Charity"
 ]
 
 def name_set() -> List[str]:
